@@ -1,0 +1,37 @@
+*{
+    background-color: #f1f1f1;
+}
+.ismail select option{
+    background-color: black;
+    color: white;
+    padding:5px 100px;
+    text-align: center;
+
+}
+
+.main{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border: 1px solid#7c7777;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+.main:hover{
+    cursor: pointer;
+    border:none;
+    background-color: rgb(226, 229, 229);
+}
+.youtube{
+  text-align: center;
+  padding:2px;
+
+}
+.text{
+    font-size: 10px;
+    background-color: #f1f1f1;
+    
+}
+.text:hover{
+    background-color: white;
+}
