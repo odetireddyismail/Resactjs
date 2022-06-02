@@ -54,7 +54,7 @@ import React from 'react';
 //import Array_object from './Json/Array_object';
 
 //Validetion Forms
-import Form from './Validetion_Forms.js/Form';
+//import Form from './Validetion_Forms.js/Form';
 
 //Bootstrap
 //import Install_Bootstrap from './BootStrap/Install_Bootstrap';
@@ -90,7 +90,7 @@ import Form from './Validetion_Forms.js/Form';
 //import Previous_Props from './Input_Box/Previous_Props';
 
 //Context_API
-// Context from './ContextAPI/Context';
+ //import Context from './ContextAPI/Context';
 
 //Axios
 //import Yo from './youtube/You';
@@ -115,12 +115,17 @@ import Form from './Validetion_Forms.js/Form';
 
 //JSX
 //import Declare_a_variable from './JSX/Declare_a_variable';
+
+//ReactHooks
+//import Reducer from './ReactHook/Reducer';
+import Use from './ReactHook/useCallback';
+
 function App() {
 
   return (
     <div>
 
-<Form/>
+<Use/>
 
     </div>
   );
