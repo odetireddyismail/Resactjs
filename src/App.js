@@ -118,18 +118,31 @@ import React from 'react';
 
 //ReactHooks
 //import Reducer from './ReactHook/Reducer';
-import Use from './ReactHook/useCallback';
+//import Use from './ReactHook/useCallback';
+
+//Redux
+import { Add,De } from './Redux/action/Action';
+import { useSelector,useDispatch } from 'react-redux';
+
 
 function App() {
 
+  const myState=useSelector((ut)=>ut.ChangeNumber);
+  const dispatch=useDispatch();
+
   return (
     <div>
-
-<Use/>
-
+     <h1>{myState}</h1>
+      <button onClick={()=>dispatch(Add())}>Adddd</button>
+      <button onClick={()=>dispatch(De())}>deee</button>
     </div>
   );
 
+  /*
+      <h1>{myState}</h1>
+      <button onClick={()=>dispatch(Add())}>Adddd</button>
+      <button onClick={()=>dispatch(De())}>deee</button>
+   */
   /*
   <Search_fun/>  
    <Props_Class name={"Props Class"}  address={["h1","Props Class","h2","Reddy"]}/>
