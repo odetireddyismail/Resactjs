@@ -31,7 +31,7 @@ function Yo() {
       params: {
         part: "snippet",
         type: "video",
-        maxResults:10,
+        maxResults: 10,
         q: Sea,
         key: KEY,
       },
@@ -43,14 +43,14 @@ function Yo() {
   };
   const onReady = (event) => {
     event.target.pauseVideo();
-  } ;
+  };
 
   return (
     <div>
       <Input pass={handleSubmit}></Input>
-     
+
       <div className="map">
-      <Para/>
+        <Para />
         {items.map((val) => {
           const { id, snippet } = val;
           return (

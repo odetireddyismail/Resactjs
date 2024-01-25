@@ -8,4 +8,4 @@ const Parent = () => {
   </div>;
 };
 
-export default Parent;Objects are not available 
+export default Parent;

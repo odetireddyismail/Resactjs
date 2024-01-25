@@ -1,28 +1,31 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import axios from "axios";
+import React, { useState } from "react";
 
 const Fetch = () => {
+  const [data, setData] = useState([]);
 
-    const [data,setData]=useState([])
-    
-    const Ismail=()=>{
-        axios.get('https://fakestoreapi.com/products')
-        .then((res)=>{setData(res)
+  const Ismail = () => {
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then((res) => {
+        setData(res);
 
-            //console.log(res)
-        }).catch((error)=>{alert('hallow ')})
-    }
-    console.log(data)
-  return (                                  
+        //console.log(res)
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  };
+  console.log(data);
+  return (
     <div>
-      <button onClick={Ismail}>button</button>  
-      
-      {data.map((item)=><h2>
-        {console.log(item)}
-      </h2>)}
-     
-    </div>
-  )
-}
+      <button onClick={Ismail}>button</button>
 
-export default Fetch
+      {data.map((item) => (
+        <h2>{console.log(item)}</h2>
+      ))}
+    </div>
+  );
+};
+
+export default Fetch;

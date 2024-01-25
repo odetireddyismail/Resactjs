@@ -10,6 +10,7 @@ const Higher_order_Component = () => {
     </div>
   )
 }
+
 const HOC=(k)=>{
 
     return(
@@ -42,5 +43,8 @@ const Ismail=()=>{
         </div>
     )
 }
+
+
+//console.log(Ismail)
 
 export default Higher_order_Component

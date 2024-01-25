@@ -19,6 +19,7 @@ const UseRef = () => {
         inputRef.current.style.color="red"
        // inputRef.current.style.display="none"
     }
+    
     return (
         <div>
             <h1>UseRef</h1>
