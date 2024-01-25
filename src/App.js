@@ -1,5 +1,5 @@
 //import logo from './logo.svg';
-import './App.css';
+//import './App.css';
 import React from 'react';
 //import Youtube from './youtube/You';
 //import Fetch from './Postman/Fetch';
@@ -65,7 +65,7 @@ import React from 'react';
 
 //PureComponent
 //import Pure from './PureComponent/Pure';
-//import Fun_memo from './PureComponent/fun_memo';
+import Fun_memo from './PureComponent/memo';
 
 //Hooks
 //import UseRef from './Hooks/UseRef';
@@ -75,6 +75,7 @@ import React from 'react';
 //import Higher_order_Component from './Hooks/Higher_order_Component';
 
 //Routing
+//import Pages from './Routing/new_v6';
 //import Routeing from './Routing/Route';
 //import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'
 //import Dyn from './Routing/Dynamic';
@@ -91,6 +92,7 @@ import React from 'react';
 
 //Context_API
  //import Context from './ContextAPI/Context';
+ //import All_Com from './ContextAPI/All_Com';
 
 //Axios
 //import Yo from './youtube/You';
@@ -118,18 +120,59 @@ import React from 'react';
 
 //ReactHooks
 //import Reducer from './ReactHook/Reducer';
-import Use from './ReactHook/useCallback';
+//import Use from './ReactHook/useCallback';
 
+//Redux
+//import { Add,De } from './Redux/action/Action';
+//import { useSelector,useDispatch } from 'react-redux';
+
+
+//Calculater
+//import {Calculater} from './Calculater/calculater';
+//import Icons from './FontAwesom/Icons';
+
+//Icon
+//import Icons from './FontAwesom/Icons';
+
+//Projects
+//import Chat from './Real_time_projects/Chat-app-firebase';
+//import QRCode from './Real_time_projects/Qr_code';
+///import Main from './Update_Context_Api_Reducer/Main';
+//import FaceBook from './Fb/FaceBook';
+//import Img from './Image/Img';
+
+
+//LifeCycleMethods
+//import UseRef from './Hooks/UseRef';
+//import { UseEff } from './LifeCycleinFun/UseEf';
+
+//Interview
+//import CityFilter from './Interview/CityFilter';
+//import Checkbox from './Interview/Checkbox';
+
+
+//payment gateway
+
+import { Synthatic } from './SynthaticEvents/Synthatic';
+//import { PayPalIntegration } from './Payment_integretion/Paypal';
 function App() {
+
+  //Redux
+  //const myState=useSelector((ut)=>ut.ChangeNumber);
+  //const dispatch=useDispatch();
 
   return (
     <div>
-
-<Use/>
-
-    </div>
+    <Synthatic/>
+   </div>
   );
+  
 
+  /*
+      <h1>{myState}</h1>
+      <button onClick={()=>dispatch(Add())}>Adddd</button>
+      <button onClick={()=>dispatch(De())}>deee</button>
+   */
   /*
   <Search_fun/>  
    <Props_Class name={"Props Class"}  address={["h1","Props Class","h2","Reddy"]}/>

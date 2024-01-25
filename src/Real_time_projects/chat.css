@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.chatbox{
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+.container{
+ display: flex;
+
+}
+.me .chatbox{
+    background-color: aquamarine;
+}
+.container.me{
+flex-direction: row-reverse;
+    
+}
+.btm{
+display: none;
+ position: fixed;
+   display: flex;
+   bottom:0;
+   left:0;
+   width: 100%;
+  flex-direction: row;
+   
+}
+.btm input{
+    flex-grow:2;
+    padding: 10px 0;
+}
+.btm button{
+    background-color: rgba(1, 8, 44, 0.4);
+    padding: 10px 0;
+}
+
+.chat-container{
+ height:86.5vh;
+ overflow-y:scroll;
+ border:1px solid;
+}
